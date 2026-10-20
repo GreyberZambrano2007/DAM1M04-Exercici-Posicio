@@ -1,0 +1,29 @@
+#numeros{
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    justify-content: space-around;
+    border-radius: 0em;
+}
+#I{
+    grid-column: 1;
+    grid-row   : 1;
+    background-color: lightgreen;
+}
+#II{
+    grid-column: 2;
+    grid-row: 2;
+    background-color: lightblue;
+}
+#numeros p {
+    font-size   : 4em;
+    border     : 0.2em groove black;
+    width      : 3em;
+    height     : 3em;
+    text-align : center;
+    line-height: 3em;
+    border-radius: 50%;
+}
