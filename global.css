@@ -1,29 +1,44 @@
-#numeros{
-    display: flex;
-    height: 100vh;
-    margin: 0;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-around;
-    justify-content: space-around;
-    border-radius: 0em;
+:root{
+    --white: hsl(0, 0%, 85%);
+    --yellow: rgb(255, 206, 46);
+    --border: 0.1em solid #181818ff;
 }
-#I{
-    grid-column: 1;
-    grid-row   : 1;
-    background-color: lightgreen;
+body{
+    margin : 0;
+    padding: 0;
+    background-color: var(--white);
 }
-#II{
-    grid-column: 2;
-    grid-row: 2;
-    background-color: lightblue;
+#menu{
+    display         : flex;
+    position        : fixed;
+    align-items     : center;
+    width           : 100%;
+    top             : 0;
+    margin          : 0;
+    background-image: url("./images_taxis/image_9.png");
+    background-size : cover;
+    background-position: center;
 }
-#numeros p {
-    font-size   : 4em;
-    border     : 0.2em groove black;
-    width      : 3em;
-    height     : 3em;
-    text-align : center;
-    line-height: 3em;
-    border-radius: 50%;
+#menu p {
+    position                 : relative;
+    font-size                : 4em;
+    font-weight              : bold;
+    font-style               : italic;
+    text-align               : center;
+    width                    : 100%;
+    border-radius            : 3%;
+    margin                   : 0;
+    top                      : 0;
+    backdrop-filter          : blur(0.1em);
+}
+#menu p a:hover {
+    justify-content: center;
+    color: #CF0041;
+    visibility: hidden;
+}
+#menu p a {
+    color           : var(--yellow);
+    background-color: transparent;
+    text-shadow     : 0.1em 0em .1em black;
+    text-decoration : none;
 }
