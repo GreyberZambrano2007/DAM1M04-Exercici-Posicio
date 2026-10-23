@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trikka — Your City Taxi</title>
+    <title>Trikka Your Taxi Service</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="global.css">
     <style>
-        /* ===== Hero ===== */
         .hero{
             background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
-                        url("./images_taxis/image_9.png") center/cover no-repeat;
+                        url("./images_taxis/image_banner.png") center/cover no-repeat;
             color: var(--white);
             text-align: center;
             align-items: center;
@@ -27,7 +27,7 @@
         }
         .hero p{
             font-size: 1.3rem;
-            max-width: 43.75rem; /* 700px */
+            max-width: 43.75rem; 
             margin: 0 auto 1.5em;
         }
         .hero button {
@@ -46,8 +46,6 @@
             color: var(--white);
             transform: scale(1.05);
         }
-
-        /* ===== Collections ===== */
         .collections{
             display: flex;
             flex-wrap: wrap;
@@ -84,8 +82,6 @@
             font-size: 0.85rem;
             font-weight: bold;
         }
-
-        /* ===== Benefits band ===== */
         .benefits{
             display: flex;
             flex-wrap: wrap;
@@ -106,25 +102,37 @@
         .benefits span{
             color: var(--yellow);
         }
-
         section h2{
             text-align: center;
             color: var(--dark);
             font-size: 2rem;
             margin-top: 2em;
         }
+        @media (max-width: 600px){
+            .hero button {
+            font-size  : 1.2em;
+            justify-content: center;
+            font-weight: bold;
+            background-color: var(--yellow);
+            color: var(--dark);
+            width : 50%;
+            border: none;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            transition: transform 0.2s ease, background-color 0.2s ease;
+            } 
+        }
     </style>
 </head>
 <body>
-
     <nav id="menu">
         <p id="Home"><a href="index.html">Home</a></p>
         <p id="Products"><a href="./productes.html">Services</a></p>
         <p id="Contact"><a href="contacte.html">Contact</a></p>
     </nav>
     <header class="hero">
-        <h1>Trikka — Get There Fast</h1>
-        <p>Reliable, comfortable and affordable taxi rides in your city, 24 hours a day.</p>
+        <h1>Trikki your money, my money</h1>
+        <p>Every day one per month we give a free ride via a fight with roosters</p>
         <button onclick="location.href='contacte.html'">Book a Ride</button>
     </header>
     <div class="container">
@@ -132,22 +140,22 @@
             <h2>Our Services</h2>
             <div class="collections">
                 <article class="card">
-                    <h3>City Rides</h3>
-                    <p>Quick and safe transfers within the city, perfect for daily commutes and errands.</p>
+                    <h3>World Rides</h3>
+                    <p>Get Anywhere anytime with trikka</p>
                     <div class="tags">
-                        <span>Fast</span><span>City</span><span>24/7</span>
+                        <span>Hyper-Fast</span><span>World</span><span>24/7</span>
                     </div>
                 </article>
                 <article class="card">
                     <h3>Airport Transfers</h3>
-                    <p>Punctual pick-ups and drop-offs at the airport with flight tracking included.</p>
+                    <p>Get quicker with your services to your flyght</p>
                     <div class="tags">
                         <span>Airport</span><span>Fixed price</span><span>Luggage</span>
                     </div>
                 </article>
                 <article class="card">
-                    <h3>Corporate Service</h3>
-                    <p>Monthly accounts and priority booking for companies and business travelers.</p>
+                    <h3>Company Commisions</h3>
+                    <p>Dayly prices for new companies with discounts of %0.</p>
                     <div class="tags">
                         <span>Business</span><span>Invoice</span><span>Priority</span>
                     </div>
@@ -155,20 +163,18 @@
             </div>
         </section>
         <div class="benefits">
-            <div>Available 24/7</div>
-            <div>Fixed Airport Rates</div>
-            <div>Secure Payment</div>
+            <div>Available 1 week per month</div>
+            <div>Random Airport Rates</div>
+            <div>Non-Secure Payment</div>
         </div>
-
     </div>
     <footer>
-        <p>© 2026 Trikka — All rights reserved · <a href="mailto:trikka.info@trikka.tri">info@trikka.tri</a></p>
+        <p>© 2026 Trikka :: All rights reserved · <a href="mailto:trikka.info@trikka.tri">trikka.info@trikka.tri</a></p>
         <div class="socials">
             <a href="#">Facebook</a>
             <a href="#">Instagram</a>
             <a href="#">Twitter</a>
         </div>
     </footer>
-
 </body>
 </html>
